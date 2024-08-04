@@ -43,7 +43,6 @@ body {
     min-width: 320px;
     font-family: 'OpenSans', sans-serif;
     font-weight: 400;
-    width: 100vw;
     margin: 0;
 }
 
@@ -63,8 +62,9 @@ a {
 }
 
 .container {
-    max-width: 1600px;
-    width: 90%;
+    max-width: 1700px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin: 0 auto;
 }
 
@@ -131,7 +131,11 @@ a {
 }
 
 .header__item-link {
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.header__item-link:focus-visible {
+    outline: none;
 }
 
 .header__item-link:focus {
@@ -150,7 +154,16 @@ a {
 }
 
 .header__find {
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.header__find:focus-visible {
+    outline: none;
 }
 
 .header__find:focus {
@@ -158,11 +171,11 @@ a {
 }
 
 .header__find svg path {
-    transition: all 0.2s ease-in-out;
+    transition: fill 0.2s ease-in-out;
 }
 
 .header__find svg rect {
-    transition: all 0.2s ease-in-out;
+    transition: fill 0.2s ease-in-out;
 }
 
 .header__find {
@@ -173,7 +186,7 @@ a {
     fill: var(--color-hover);
 }
 
-.header__find:hover svg path, .header__find:hover svg rect {
+.header__find:active svg path, .header__find:hover svg rect {
     fill: var(--color-purple-focus-active);
 }
 
@@ -188,7 +201,8 @@ a {
 }
 
 .hero__container {
-    padding: 148px 0;
+    padding-top: 148px;
+    padding-bottom: 148px;
 }
 
 .hero__title {
@@ -214,7 +228,7 @@ a {
 }
 
 .hero__btn {
-    transition: all 0.1s ease-in-out;
+    transition: outline 0.1s ease-in-out, background-color 0.1s ease-in-out;
 }
 
 .hero__btn:focus {
@@ -279,11 +293,11 @@ a {
 }
 
 .gallery__label {
-    transition: all 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
 .gallery__label input::before {
-    transition: all 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out;
 }
 
 .gallery__label:focus {
@@ -306,7 +320,7 @@ a {
     color: var(--color-hover);
 }
 
-.gallery__radio {
+.gallery__checkbox {
     appearance: none;
     position: relative;
     width: 12px;
@@ -314,20 +328,20 @@ a {
     margin-right: 12px;
 }
 
-.gallery__radio:checked::before {
+.gallery__checkbox:checked::before {
     position: absolute;
     content: '';
     display: block;
     width: 12px;
     height: 12px;
     border: 1px solid var(--color-purple);
-    background-image: url('../img/gallery-radio-checked.svg');
+    background-image: url('../img/gallery-checkbox-checked.svg');
     background-position: 3px 3px;
     background-repeat: no-repeat;
     background-size: 4px 4px;
 }
 
-.gallery__radio::before {
+.gallery__checkbox::before {
     position: absolute;
     content: '';
     display: block;
@@ -492,7 +506,7 @@ a {
     line-height: 2;
     color: var(--color-purple);
     transform: translateX(-5px);
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .events__item-link::after {
@@ -503,7 +517,11 @@ a {
     height: 1px;
     bottom: 8px;
     background-color: var(--color-purple);
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.events__item-link:focus-visible {
+    outline: none;
 }
 
 .events__item-link:focus {
@@ -586,7 +604,8 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 36px 0;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
 .contacts__address {
@@ -648,7 +667,7 @@ a {
     border-radius: 100px;
     padding: 13px 35px;
     background-color: #fff;
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, outline 0.2s ease-in-out;
 }
 
 .contacts__form-btn:focus {
@@ -689,6 +708,14 @@ a {
 
 .contacts__social-img g {
     transition: opacity 0.2s ease-in-out;
+}
+
+.contacts__social-link:focus-visible {
+    outline: none;
+}
+
+.contacts__social-link:focus-visible svg g {
+    opacity: 0.5;
 }
 
 .contacts__social-img:focus {
@@ -742,7 +769,8 @@ a {
 }
 
 .footer__container {
-    padding: 46px 0;
+    padding-top: 46px;
+    padding-bottom: 46px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -751,6 +779,14 @@ a {
 .footer__list {
     display: flex;
     gap: 20px;
+}
+
+.footer__social-link:focus-visible {
+    outline: none;
+}
+
+.footer__social-link:focus-visible svg path {
+    fill: var(--color-white);
 }
 
 .footer__social-img path {

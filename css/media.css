@@ -33,7 +33,8 @@
     }
 
     .hero__container {
-        padding: 101px 0;
+        padding-top: 101px;
+        padding-bottom: 101px;
     }
 
     .hero__descr {
@@ -92,7 +93,7 @@
 
     .events__item-wrapper {
         padding: 15px 33px;
-        padding-bottom: 48px;
+        padding-bottom: 42px;
     }
 
     .events__item-place {
@@ -105,7 +106,7 @@
     }
 
     .events__item-title {
-        margin-bottom: 7px;
+        margin-bottom: 5px;
     }
 
     .events__item-descr {
@@ -130,7 +131,8 @@
     /* contacts */
 
     .contacts__container {
-        padding: 42px 0;
+        padding-top: 42px;
+        padding-bottom: 42px;
     }
 
     .contacts__address {
@@ -157,7 +159,8 @@
     /* footer */
 
     .footer__container {
-        padding: 36px 0;
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
 
     .footer__social-img {
@@ -184,7 +187,7 @@
 
     .catalog__item {
         flex-direction: column;
-        gap: 35px;
+        gap: 34px;
     }
 
     .catalog__item-img {
@@ -203,10 +206,6 @@
 @media (max-width: 1023px) {
     /* header */
 
-    .container {
-        width: 87%;
-    }
-
     .header__list {
         gap: 44px;
     }
@@ -218,7 +217,8 @@
     }
 
     .hero__container {
-        padding: 87px 0;
+        padding-top: 87px;
+        padding-bottom: 87px;
     }
     
     /* gallery */
@@ -270,7 +270,7 @@
 
     .events__item-wrapper {
         padding: 16px 33px;
-        padding-bottom: 48px;
+        padding-bottom: 42px;
     }
 
     .events__item-time {
@@ -327,12 +327,13 @@
     /* header */
 
     .container {
-        width: 90%;
+        padding-left: 15px;
+        padding-right: 16px;
     }
 
     .header__container {
         width: 100%;
-        padding-left: 5%;
+        padding-right: 0;
         padding-top: 17px;
         padding-bottom: 12px;
         gap: 10px;
@@ -350,6 +351,8 @@
 
     .header__find {
         margin-right: 5%;
+        width: 18px;
+        height: 25px;
     }
 
     .header__find-icon {
@@ -435,8 +438,8 @@
     }
 
     .gallery__container {
-        padding: 54px 0;
-        padding-bottom: 48px;
+        padding-top: 54px;
+        padding-bottom: 46px;
     }
 
     .gallery__title {
@@ -465,11 +468,11 @@
     }
 
     .catalog__list {
-        gap: 30px;
+        gap: 27px;
     }
 
     .catalog__item {
-        gap: 20px;
+        gap: 23px;
     }
 
     .catalog__item-title {
@@ -493,7 +496,7 @@
     }
 
     .events__list {
-        --gap: 20px;
+        --gap: 18px;
     }
 
     .events__item-wrapper {
@@ -549,7 +552,7 @@
 
     .gallery__images-list {
         flex-direction: column;
-        gap: 29px;
+        gap: 27px;
     }
 
     .gallery__img {
@@ -580,11 +583,12 @@
     }
 
     .contacts__container {
-        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .contacts__address {
-        margin-bottom: 0;
+        margin-bottom: 2px;
     }
 
     .contacts__address-name {
