@@ -300,6 +300,11 @@ a {
     transition: border-color 0.2s ease-in-out;
 }
 
+.gallery__checkbox:focus-visible::before {
+    outline: none;
+    border-color: var(--color-hover);
+}
+
 .gallery__label:focus {
     color: var(--color-hover);
 }
